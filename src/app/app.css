@@ -1,0 +1,283 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: #f2f4f5;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+.font-tiro-bangla {
+  font-family: "Tiro Bangla", serif;
+}
+
+.bg-tatto-dark-blue {
+  background-color: #461e85;
+}
+
+.bg-tatto-pink {
+  background-color: #5b319d;
+}
+
+.bg-tatto-light-blue {
+  background-color: #461e851a;
+}
+
+.bg-tatto-opacity-blue {
+  background-color: #9e84c5;
+}
+
+.bg-tatto-opacity {
+  background-color: #3232325e;
+}
+
+.text-tatto-dark-blue {
+  color: #461e85;
+}
+
+.text-tatto-light-red {
+  color: #ea734e;
+}
+
+.bg-tatto-light-red {
+  background-color: #ea734e;
+}
+
+.bg-tatto-simple-white {
+  background-color: #fafafa;
+}
+
+.border-tatto-dark-blue {
+  border-color: #461e85;
+}
+
+.bg-mid-gray {
+  background-color: #e0e3e5;
+}
+
+.bg-head-pink {
+  background-color: #f4f2ff;
+}
+
+.bg-mobile-head-pink {
+  background-color: #e6e6e6;
+}
+
+.bg-body-pink {
+  background-color: #f5f7f8;
+}
+
+.bg-tatto-disabled {
+  background-color: #c2c2c9;
+}
+
+.bg-input-gray {
+  background-color: #f6f4f9;
+}
+
+.bg-tatto-light-aqua {
+  background-color: #99c2d5;
+}
+
+.text-tatto-light-aqua {
+  color: #99c2d5;
+}
+
+.text-tatto-light-black {
+  color: #323232;
+}
+
+.text-tatto-muted {
+  color: #838187;
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.form-radio:checked {
+  accent-color: rgb(11, 169, 11);
+}
+.form-radio {
+  width: 15px;
+  height: 15px;
+}
+
+.img-gray {
+  filter: invert(91%) sepia(11%) saturate(180%) hue-rotate(83deg)
+    brightness(83%) contrast(84%);
+}
+
+input:checked ~ .dot {
+  transform: translateX(120%);
+  background-color: white;
+}
+
+input.small-checkbox:checked ~ .dot {
+  transform: translateX(130%);
+  background-color: white;
+}
+
+.translate-x-extraFull {
+  transform: translateX(120%);
+}
+
+.w-11-13 {
+  width: 95%;
+}
+
+.bg-tatto-orange {
+  background-color: #ea8e71;
+}
+
+/* Chrome, Edge, and Safari */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f5f7f8;
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e1e5e7;
+  border-radius: 14px;
+  border: 3px solid #e1e5e7;
+}
+
+.hide-scrollbar::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar-thumb,
+.hide-scrollbar::-webkit-scrollbar-track {
+  width: 0px;
+  padding: 0;
+  display: none;
+}
+
+.radio-image input[type="radio"] {
+  display: none;
+}
+
+.radio-image input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.radio-image input[type="radio"]:checked + label {
+  border-color: #f00;
+}
+
+.radio-image input[type="radio"] + label img {
+  width: 50px;
+  height: 50px;
+}
+
+.radio-image input[type="radio"]:checked + label img {
+  display: none;
+}
+
+.radio-image input[type="radio"]:checked + label::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(/png_icons/check.png);
+  background-size: cover;
+}
+
+.after-arrow::after {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+.slick-slider.slick-initialized {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decline-circle-card {
+  margin: auto;
+}
+
+.transition-fiveS {
+  transition: 0.9s;
+}
+
+.rounded-table-head {
+  background-color: #f4f2ff;
+}
+.rounded-table-head > th:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+/* CustomSlider.css */
+.slick-list {
+  position: relative;
+
+  /* Hide the arrows when there are no more slides */
+  &:not(.slick-dotted) .slick-arrow {
+    display: none;
+  }
+}
+.rounded-table-head > th:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-right: 1.5rem;
+}
+
+.absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes flip {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(-1);
+  }
+}
+
+.animate-flip {
+  animation: flip 0.3s linear forwards;
+}
+
+@keyframes flipreverse {
+  0% {
+    transform: scaleY(-1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-flip-reverse {
+  animation: flipreverse 0.3s linear forwards;
+}
+
+.mobile__footer {
+  display: none;
+}
+
+.shadow-all {
+  box-shadow: 0px 0px 1px 0px !important;
+}
+
+.after-elem::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+
+@media screen and(max-width: 600px) {
+  .mobile__footer {
+    display: block;
+  }
+}
