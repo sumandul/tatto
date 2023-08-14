@@ -57,7 +57,7 @@ const AppointmentBooked = () => {
 
   const [sendForOnlineBookingsOnly, setSendForOnlineBookingsOnly] =
     useState(true);
-
+    const [isSelected, setIsSelected] = useState(false);
   const [staffMadeBookingsOnly, setStaffMadeBookingsOnly] = useState(false);
   //   Days Before Status
   const [daysAppoinment, setDaysAppointment] = useState([
@@ -645,10 +645,10 @@ const AppointmentBooked = () => {
                     </div>
                   </div>
                   <div className="flex gap-4 items-center overflow-x-scroll hide-scrollbar pb-0 w-[60%] sm:w-[70%] pr-2">
-                    {automatedMessagesTeamMates.map((mate) => {
+                    {automatedMessagesTeamMates.map((mate,i) => {
                       if (mate.automatedMessages) {
                         return (
-                          <div className="bg-white border rounded-full flex items-center px-2 py-1 gap-2">
+                          <div key={i} className="bg-white border rounded-full flex items-center px-2 py-1 gap-2">
                             <Image
                               src={mate.dp}
                               width={20}
@@ -677,7 +677,7 @@ const AppointmentBooked = () => {
                   >
                     <ul className="overflow-y-scroll hide-scrollbar h-72">
                       {automatedMessagesTeamMates.map((member, idx) => {
-                        const [isSelected, setIsSelected] = useState(false);
+                
                         return (
                           <li
                             key={idx}
