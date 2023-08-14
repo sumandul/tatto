@@ -1,15 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { FiX } from "react-icons/fi";
-const MobileHeader = dynamic(()=>import("../partails/MobileHeader"),{
+ const  MobileFooter = dynamic(()=>import("../partails/MobileHeader"),{
   ssr:false
-   
  })
- const  MobileFooter = dynamic(()=>import("../MobileFooter/MobileHeader"),{
+ const  MobileHeader = dynamic(()=>import("../partails/MobileHeader"),{
   ssr:false
-   
  })
-
 const ZoomLevel = () => {
   const [ZoomLevel, setZoomLevel] = useState("XX-Large");
 

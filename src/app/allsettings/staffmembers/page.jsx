@@ -4,10 +4,11 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FiChevronDown, FiChevronRight, FiX } from "react-icons/fi";
 // Pagse
-import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
-import Details from "./staffprofile/details/page";
 
+const Details = dynamic(()=>import("./staffprofile/details/page"),{
+  ssr:false
+})
 const Locations = dynamic(()=>import("./staffprofile/locations/page"),{
   ssr:false
 })
@@ -35,7 +36,6 @@ const Permissions = dynamic(()=>import("./staffprofile/permissions/page"),{
   ssr:false
 })
 const StaffMembers = ({ children }) => {
-  const router = useRouter();
   const [staffPages, setStaffPages] = useState(false);
   const [addStaff, setAddStaff] = useState(false);
   const [showDotList, setShowDotList] = useState(false);
@@ -48,7 +48,6 @@ const StaffMembers = ({ children }) => {
   const [isCardOnlineBooking, setIsCardOnlineBooking] = useState(true);
 
   const [sendInviteModal, setSendInviteModal] = useState(false);
-
   const [mobileLocation, setMobileLocation] = useState("Katewil");
   const [selectLocationModal, setSelectLocationModal] = useState(false);
   const locationsList = ["USA", "UEA", "Russia", "Pakistan", "India"];

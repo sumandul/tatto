@@ -5,6 +5,7 @@ import { FiChevronRight } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+
 const SideBar = dynamic(()=>import("@/app/components/SideBar"),{
   ssr:false
 })
@@ -94,7 +95,7 @@ const AutomatedMessages = ({ children }) => {
             >
               <ul>
                 <LinksComponent
-                  link={"appointmentbooked"}
+                  link={"automatedmessages/appointmentbooked"}
                   linkName={"Appointment Booked"}
                   activeIcon={"clipboard-tick-active"}
                   nonActiveIcon={"clipboard-tick"}

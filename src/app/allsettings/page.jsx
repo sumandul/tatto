@@ -1,6 +1,6 @@
 import SettingCard from "@/app/components/SettingCard";
+import Header from "@/app/partails/Header"; 
 
-import Header from "@/app/partails/Header";
 
 const AllSettings = () => {
   return (
@@ -47,7 +47,7 @@ const AllSettings = () => {
             description={
               "Configure and customize automated emails, text messages, and more"
             }
-            explore={"/allsettings/automatedmessages/appointmentbooked"}
+            explore={"/allsettings/automatedmessages/"}
           />
           {/* this is Form Templates Card */}
           <SettingCard

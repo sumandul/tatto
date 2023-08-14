@@ -3,9 +3,11 @@ import React, { useState } from "react";
 // Sub Pages
 import Image from "next/image";
 import dynamic from "next/dynamic";
+
 const Details = dynamic(()=>import('./details/page'),{
   ssr:false
 })
+
 const Advanced = dynamic(()=>import('./advanced/page'),{
   ssr:false
 })

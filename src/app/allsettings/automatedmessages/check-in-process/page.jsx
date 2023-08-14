@@ -4,46 +4,42 @@ import { FaRegCalendarCheck } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { BsChatDots, BsPlusCircleFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
-const   AddCondition = dynamic(()=>import("../components/AddCondition"), {
-  ssr:false
 
+const AutomatedMessages= dynamic(()=>import("../page"),{
+  ssr:false,
 })
-const ConnectorLine = dynamic(()=>import("../page"), {
-  ssr:false
 
+const AutomatedCard = dynamic(()=>import("@/app/components/AutomatedCard"),{
+  ssr:false,
 })
-const AutomatedMessages = dynamic(()=>import("../page"), {
-  ssr:false
 
+const CreateCard = dynamic(()=>import("../components/CreateCard"),{
+  ssr:false,
 })
-const DeleteModal = dynamic(()=>import("../components/DeleteModal"), {
-  ssr:false
 
+const AddCondition = dynamic(()=>import("../components/AddCondition"),{
+  ssr:false,
 })
-const SendText = dynamic(()=>import("../components/SendText"), {
-  ssr:false
 
+const ConnectorLine = dynamic(()=>import("../components/ConnectorLine"),{
+  ssr:false,
 })
-const SendTestModalMessage = dynamic(()=>import("../components/SendTestModalMessage"), {
-  ssr:false
+const DeleteModal = dynamic(()=>import("../components/DeleteModal"),{
+  ssr:false,
+})
+const SendText  = dynamic(()=>import("../components/SendText"),{
+  ssr:false,
+})
+const SendTestModalMessage  = dynamic(()=>import("../components/SendTestModalMessage"),{
+  ssr:false,
+})
+const SendTestModal  = dynamic(()=>import("../components/SendTestModal"),{
+  ssr:false,
+})
+const SendEmail  = dynamic(()=>import("../components/SendEmail"),{
+  ssr:false,
+})
 
-})
-const  SendEmail = dynamic(()=>import("../components/SendEmail"), {
-  ssr:false
-
-})
-const   SendTestModal = dynamic(()=>import("../components/SendTestModal"), {
-  ssr:false
-
-})
-const   CreateCard = dynamic(()=>import("@/app/components/SelectDropdown"), {
-  ssr:false
-
-})
-const   AutomatedCard = dynamic(()=>import("@/app/components/AutomatedCard"), {
-  ssr:false
-
-})
 const CheckInProcess = () => {
   const [priorToAppointmentTime, setPriorToAppointmentTime] = useState({
     email: true,

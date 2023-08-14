@@ -1,7 +1,6 @@
 import React from "react"
-import Header from "../components/Header"
 import dynamic from "next/dynamic"
-const Header = dynamic(()=>import("./components/Header"),{
+const Header = dynamic(()=>import("../partails/Header"),{
   ssr:false
 })
 

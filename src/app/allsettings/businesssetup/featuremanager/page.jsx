@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
+
 const BusinessSettings = dynamic(()=>import('../page'),{
   ssr:false
 })

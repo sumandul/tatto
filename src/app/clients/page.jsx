@@ -12,7 +12,7 @@ import dynamic from "next/dynamic";
 const AddClientSlide = dynamic(()=>import("./components/AddClientSlide"),{
   ssr:false
 })
-const Header = dynamic(()=>import("./@/app/partails/Header"),{
+const Header = dynamic(()=>import("@/app/partails/Header"),{
   ssr:false
 })
 

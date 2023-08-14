@@ -1,17 +1,42 @@
 "use client";
 import React, { useState } from "react";
-import AutomatedMessages from "../page";
-import AutomatedCard from "@/app/components/AutomatedCard";
-import CreateCard from "../components/CreateCard";
-import AddCondition from "../components/AddCondition";
 import { FaRegCalendarCheck } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { BsChatDots, BsPlusCircleFill } from "react-icons/bs";
-import SendEmail from "../components/SendEmail";
-import SendTestModal from "../components/SendTestModal";
-import SendText from "../components/SendText";
-import DeleteModal from "../components/DeleteModal";
-import ConnectorLine from "../components/ConnectorLine";
+import dynamic from "next/dynamic";
+
+const  ConnectorLine = dynamic(()=>import("../components/ConnectorLine"),{
+   ssr:false,
+})
+const  DeleteModal = dynamic(()=>import("../components/DeleteModal"),{
+  ssr:false,
+})
+const  SendText = dynamic(()=>import("../components/SendText"),{
+  ssr:false,
+})
+const  SendTestModal = dynamic(()=>import("../components/SendTestModal"),{
+  ssr:false,
+})
+const  SendEmail = dynamic(()=>import("../components/SendEmail"),{
+  ssr:false,
+})
+const  AddCondition = dynamic(()=>import("../components/AddCondition"),{
+  ssr:false,
+})
+const  CreateCard = dynamic(()=>import("../components/CreateCard"),{
+  ssr:false,
+})
+const  AutomatedCard = dynamic(()=>import("@/app/components/AutomatedCard"),{
+  ssr:false,
+})
+
+const  AutomatedMessages = dynamic(()=>import("../page"),{
+  ssr:false,
+})
+
+
+
+
 
 const WaitlistEntries = () => {
   //

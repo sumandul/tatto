@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import { FiPlusCircle } from "react-icons/fi";
 import dynamic from "next/dynamic";
- const MobileHeader = dynamic(()=>import("./partails/MobileFooter"),{
+ const MobileHeader = dynamic(()=>import("@/app/partails/MobileHeader"),{
   ssr:false
  })
- const MobileFooter = dynamic(()=>import("../partails/MobileFooter"),{
+ const MobileFooter = dynamic(()=>import("@/app/partails/MobileFooter"),{
   ssr:false
  })
 

@@ -7,7 +7,7 @@ const MobileHeader = dynamic(()=>import("../partails/MobileHeader"),{
   ssr:false
    
  })
- const  MobileFooter = dynamic(()=>import("../MobileFooter/MobileHeader"),{
+ const  MobileFooter = dynamic(()=>import("../partails/MobileFooter"),{
   ssr:false
    
  })

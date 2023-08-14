@@ -4,6 +4,10 @@ import React, { useState } from "react";
 import { FiChevronRight } from "react-icons/fi";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+
+const AddService = dynamic(()=>import("./addservice/page"),{
+  ssr:false
+})
 const ListDropdown = dynamic(()=>import("@/app/components/ListDropdown"),{
   ssr:false
 })

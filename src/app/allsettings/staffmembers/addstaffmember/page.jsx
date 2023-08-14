@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
+
 const MobileHeader =  dynamic(()=>import(()=>import("@/app/partails/MobileHeader")),{
   ssr:true
 })
