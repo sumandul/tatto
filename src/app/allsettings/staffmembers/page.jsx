@@ -4,38 +4,21 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FiChevronDown, FiChevronRight, FiX } from "react-icons/fi";
 // Pagse
-import dynamic from "next/dynamic";
+import Details from "./staffprofile/details/page";
+import Locations from "./staffprofile/locations/page";
+import Notifications from "./staffprofile/notification/page";
+import Permissions from "./staffprofile/permissions/page";
+import Services from "./staffprofile/services/page";
+import WorkHours from "./staffprofile/workhours/page";
+import Compensation from "./staffprofile/compensation/page";
+import Header from "@/app/partails/Header";
 
-const Details = dynamic(()=>import("./staffprofile/details/page"),{
-  ssr:false
-})
-const Locations = dynamic(()=>import("./staffprofile/locations/page"),{
-  ssr:false
-})
-const Header = dynamic(()=>import("../../components/Header"),{
-  ssr:false
-})
-const Notifications = dynamic(()=>import("./staffprofile/notification/page"),{
-  ssr:false
-})
+import { useRouter } from "next/navigation";
+import SelectDrodown from "@/app/components/SelectDropdown";
 
-const Compensation = dynamic(()=>import("./staffprofile/compensation/page"),{
-  ssr:false
-})
-const SelectDropdown = dynamic(()=>import("../../components/SelectDropdown"),{
-  ssr:false
-})
 
-const WorkHours = dynamic(()=>import("./staffprofile/workhours/page"),{
-  ssr:false
-})
-const Services = dynamic(()=>import("./staffprofile/services/page"),{
-  ssr:false
-})
-const Permissions = dynamic(()=>import("./staffprofile/permissions/page"),{
-  ssr:false
-})
 const StaffMembers = ({ children }) => {
+  const router = useRouter();
   const [staffPages, setStaffPages] = useState(false);
   const [addStaff, setAddStaff] = useState(false);
   const [showDotList, setShowDotList] = useState(false);
@@ -48,6 +31,7 @@ const StaffMembers = ({ children }) => {
   const [isCardOnlineBooking, setIsCardOnlineBooking] = useState(true);
 
   const [sendInviteModal, setSendInviteModal] = useState(false);
+
   const [mobileLocation, setMobileLocation] = useState("Katewil");
   const [selectLocationModal, setSelectLocationModal] = useState(false);
   const locationsList = ["USA", "UEA", "Russia", "Pakistan", "India"];
@@ -193,7 +177,7 @@ const StaffMembers = ({ children }) => {
                   >
                     Location <p className="ml-1">:</p>
                   </label>
-                  <SelectDropdown
+                  <SelectDrodown
                     options={[
                       "All Locations",
                       "Other Location",
@@ -501,7 +485,7 @@ const StaffMembers = ({ children }) => {
                                       </label>
                                     </div>
                                     <div className="mt-3 text-sm italic text-gray-500">
-                                      Turn off this setting if you dont
+                                      Turn off this setting if you don&apos;t
                                       want to collect credit cards for services
                                       booked with this staff member online.
                                     </div>

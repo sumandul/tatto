@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MobileHeader from "@/app/partails/MobileHeader";
 import MobileFooter from "@/app/partails/MobileFooter";
 
+
 const AddNewStaffMember = () => {
   const [isProviderChecked, setIsProviderCheck] = useState(false);
   const [isOnlineBooking, setIsOnlineBooking] = useState(false);

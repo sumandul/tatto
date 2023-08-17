@@ -1,7 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import MobileHeader from "@/app/partails/MobileHeader";
+import React  from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+const MobileHeader = dynamic(()=>import("@/app/partails/MobileHeader"),{
+  ssr:false
+   
+ })
 
 const ChnageSaleDate = () => {
   return (
