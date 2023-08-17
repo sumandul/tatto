@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
-const Header = dynamic(()=>import(()=>"../components/Header"))
+import Header from "../components/Header";
 
 const Page = () => {
   const [GiftCardDown, setGiftCardDown] = useState(false);

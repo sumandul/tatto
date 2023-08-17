@@ -179,7 +179,7 @@ const Promotions = () => {
               {/*  Window Card Head */}
               <div className="flex justify-between px-4 py-2 bg-head-pink">
                 <h1 className="font-bold self-center">
-                  New Year&apos;s Special
+                  New Years Special
                 </h1>
                 <div className="flex gap-2">
                   {/* Edit Button */}
@@ -369,8 +369,8 @@ const Promotions = () => {
               {/* Body */}
               <div className="flex flex-col gap-4">
                 <span className="text-md font-semibold text-center">
-                  Are you sure you want to delete the promotion &quot;New Year
-                  &apos;s Special&quot;?
+                  Are you sure you want to delete the promotion New Year
+                s Special?
                 </span>
               </div>
               {/* Buttons */}

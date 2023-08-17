@@ -1,4 +1,5 @@
 "use client";
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import { FiX } from "react-icons/fi";
  const  MobileFooter = dynamic(()=>import("../partails/MobileHeader"),{

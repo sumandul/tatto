@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FiX } from "react-icons/fi";
+import dynamic from "next/dynamic";
 
 const MobileHeader = dynamic(()=>import("../partails/MobileHeader"),{
   ssr:false
@@ -9,8 +10,6 @@ const MobileHeader = dynamic(()=>import("../partails/MobileHeader"),{
  })
 
 const StartOfTheWeek = () => {
-  const [editZoomLevel, setEditZoomLevel] = useState(false);
-
   const [editModal, setEditModal] = useState(false);
 
   const [weekSelected, setWeekSelected] = useState("Monday");

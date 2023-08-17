@@ -501,7 +501,7 @@ const StaffMembers = ({ children }) => {
                                       </label>
                                     </div>
                                     <div className="mt-3 text-sm italic text-gray-500">
-                                      Turn off this setting if you don&apos;t
+                                      Turn off this setting if you dont
                                       want to collect credit cards for services
                                       booked with this staff member online.
                                     </div>

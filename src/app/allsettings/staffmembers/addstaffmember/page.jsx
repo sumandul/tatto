@@ -1,13 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
-
-const MobileHeader =  dynamic(()=>import(()=>import("@/app/partails/MobileHeader")),{
-  ssr:true
-})
-const MobileFooter =  dynamic(()=>import(()=>import("@/app/partails/MobileFooter")),{
-  ssr:true
-})
+import MobileHeader from "@/app/partails/MobileHeader";
+import MobileFooter from "@/app/partails/MobileFooter";
 
 const AddNewStaffMember = () => {
   const [isProviderChecked, setIsProviderCheck] = useState(false);

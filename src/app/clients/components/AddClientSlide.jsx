@@ -7,7 +7,7 @@ import { RxCross1 } from "react-icons/rx";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { FiArrowLeft, FiCamera, FiX } from "react-icons/fi";
 
-import { BsArrowLeft, BsArrowRightShort, BsThreeDots } from "react-icons/bs";
+import {  BsArrowRightShort, BsThreeDots } from "react-icons/bs";
 // Components
 const TimeLineCard = dynamic(()=>import("./TimeLineCard"),{
   ssr:false
@@ -25,7 +25,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const  PastVisitsDetail = dynamic(()=>import("./PastVisitsDetail"))
+const  PastVisitsDetail = dynamic(()=>import("./PastVisitsDetail"),{
+  ssr:false
+})
 import { GoLock } from "react-icons/go";
 import dynamic from "next/dynamic";
 import { ImPieChart } from "react-icons/im";
@@ -1078,7 +1080,8 @@ const AddClientSlide = ({
                             Phone
                           </label>
                           <span className="text-sm font-semibold text-tatto-dark-blue">
-                            &#40;833&#41; 240-3627
+                            {/* &#40;833&#41; 240-3627
+                             */}
                           </span>
                         </div>
                         {/*  */}
@@ -1129,7 +1132,7 @@ const AddClientSlide = ({
                           Client created
                         </h1>
                         <span className="flex text-xs">
-                          JULY 1, 8:23 PM&nbsp; •&nbsp;&nbsp;
+                          {/* JULY 1, 8:23 PM&nbsp; •&nbsp;&nbsp; */}
                           <p className="font-light">
                             Created by Katell Mcclain
                           </p>

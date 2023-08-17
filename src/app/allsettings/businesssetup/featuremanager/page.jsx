@@ -24,7 +24,7 @@ const FeatureManager = () => {
           Feature Manager
         </h1>
         <span className="text-gray-500 font-light text-sm ml-4 ">
-          (Turn off features you don&apos;t need in order to keep TattooAdmin
+          (Turn off features you dont need in order to keep TattooAdmin
           nice and tidy.)
         </span>
         <hr />

@@ -47,7 +47,7 @@ const AllSettings = () => {
             description={
               "Configure and customize automated emails, text messages, and more"
             }
-            explore={"/allsettings/automatedmessages/"}
+            explore={"/allsettings/automatedmessages/appointmentbooked"}
           />
           {/* this is Form Templates Card */}
           <SettingCard
